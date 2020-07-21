@@ -1,0 +1,38 @@
+// Exam0340.java
+// 주제 : 메모리 크기에 따른 부동소수점의 크기
+
+package com.eomcs.basic.ex03;
+
+
+class Exam0340 { 
+    public static void main(String[] args) { 
+      // 4바이트 메모리에 부동소수점 저장하기
+      System.out.println(999.9999f);
+      System.out.println(999999.9f);
+      System.out.println(9.999999f);
+
+      // 메모리 크기를 넘는 값은 반올림 처리되어 저장된다.
+      System.out.println(999.99994f);
+      System.out.println(9999999.4f);
+      System.out.println(9.9999994f);
+    
+     
+      System.out.println(987654321.1234567f);
+      System.out.println(987654321123456.7f);
+      System.out.println(9.876543211234567f);
+
+      // 8바이트 메모리에 부동소수점 저장하기
+      System.out.println(987654321.1234567f);
+      System.out.println(987654321123456.7f);
+      System.out.println(9.876543211234567f);
+  
+      // 8바이트 메모리에는 최대 16자리의 부동소수점을 저장할 수 있다.
+      // 초과하면 반올림 처리되거나 짤린다.
+      System.out.println(987654321.12345678f);
+      System.out.println(9876543211234567.8f);
+      System.out.println(9.8765432112345678f);
+
+
+ }
+
+}

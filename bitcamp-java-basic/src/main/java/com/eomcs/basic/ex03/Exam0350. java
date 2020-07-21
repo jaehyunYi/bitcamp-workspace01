@@ -1,0 +1,15 @@
+// Exam0350.java
+// 주제 : 부동소수점의 정규화 (2진수로 바꾸기)
+
+package com.eomcs.basic.ex03;
+
+
+public class Exam0350 { 
+    public static void main(String[] args) { 
+      // 345.6789234의 수를 변수에 저장하는 코드를 작성하라.
+     
+      System.out.println(12.375f);
+      
+ }
+
+}
